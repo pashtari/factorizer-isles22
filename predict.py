@@ -126,18 +126,6 @@ def get_args() -> Namespace:
     return args
 
 
-# class Args:
-#     dwi = "/Users/pooya/Data/ISLES2022/training/rawdata/sub-strokecase0001/ses-0001/sub-strokecase0001_ses-0001_dwi.nii.gz"
-#     adc = "/Users/pooya/Data/ISLES2022/training/rawdata/sub-strokecase0001/ses-0001/sub-strokecase0001_ses-0001_adc.nii.gz"
-#     flair = "/Users/pooya/Data/ISLES2022/training/rawdata/sub-strokecase0001/ses-0001/sub-strokecase0001_ses-0001_flair.nii.gz"
-#     output = "/Users/pooya/Data/ISLES2022/training/rawdata/sub-strokecase0001/ses-0001/sub-strokecase0001_ses-0001_pred.nii.gz"
-#     checkpoints = [
-#         "/Users/pooya/Library/CloudStorage/OneDrive-KULeuven/PhD_thesis/research/ISLES22/factorizer-isles22/logs/fold0/resunet/version_0/checkpoints/epoch=1999-step=99999.ckpt",
-#         "/Users/pooya/Library/CloudStorage/OneDrive-KULeuven/PhD_thesis/research/ISLES22/factorizer-isles22/logs/fold0/swin-factorizer/version_0/checkpoints/epoch=1999-step=99999.ckpt",
-#     ]
-
-
 if __name__ == "__main__":
     args = get_args()
-    # args = Args()
     main(args)
