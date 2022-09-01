@@ -111,7 +111,7 @@ factorizer-isles22
 $ python predict.py --dwi ... --adc ... --flair ... --output ... 
 ```
 
-To ensemble only some of the models rather than all of them, specify the argument `--checkpoints` with a list of paths to the model checkpoints that you want to ensemble. As an example, 
+If you want to use only some of the models rather than all of them, specify the argument `--checkpoints` with a list of paths to the model checkpoints.
 
 
 ## Docker
