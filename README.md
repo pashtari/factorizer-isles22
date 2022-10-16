@@ -37,7 +37,7 @@ where `dataset_dir` must contain `rawdata` and `derivatives` folders. After runn
 ```bash
 ISLES22
 ├── dataset.json # data properties 
-└── training # dataset_dir
+└── training
     ├── rawdata
     │   ├── sub-strokecase0001
     │   └── ...
