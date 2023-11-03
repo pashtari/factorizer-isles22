@@ -1,3 +1,14 @@
+SimpleITK==2.2.0
 SimpleITK-SimpleElastix
+scikit-image==0.19.3
+matplotlib==3.8.1
+torch==1.12.1
+pytorch-lightning==1.7.0
+torchmetrics==0.9.3
+einops==0.4.1
+opt_einsum==3.3.0
+itk==5.2.1.post1
+nibabel==4.0.2
+monai==0.9.1
 pyyaml
-git+https://github.com/pashtari/factorizer.git
+git+https://github.com/pashtari/factorizer.git@0.0.1
