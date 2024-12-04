@@ -14,7 +14,7 @@ $ git clone https://github.com/pashtari/factorizer-isles22.git
 2. Install the dependencies:
 
 ``` bash
-$ pip install -r requirements.txt --use-deprecated=legacy-resolver
+$ pip install -r requirements.txt
 ```
 
 
