@@ -30,9 +30,7 @@ def main(args: Namespace):
 
 
 def get_args() -> Namespace:
-    parser = ArgumentParser(
-        description="""FLAIR-DWI registration.""", add_help=False
-    )
+    parser = ArgumentParser(description="""FLAIR-DWI registration.""", add_help=False)
     parser.add_argument("path")
     args = parser.parse_args()
     return args

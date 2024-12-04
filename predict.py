@@ -28,9 +28,7 @@ def main(args):
             *flair_file_name.split(".")[1:],
         ]
     )
-    registered_flair = os.path.join(
-        os.path.dirname(args.flair), flair_file_name
-    )
+    registered_flair = os.path.join(os.path.dirname(args.flair), flair_file_name)
     sitk.WriteImage(registered_image, registered_flair)
     for file in glob.glob(cwd + "/TransformParameters.*"):
         os.remove(file)  # remove transform parameters files
@@ -94,7 +92,7 @@ def main(args):
         separate_folder=False,
         print_log=True,
     )
-    pred["input"] = pred["input"].as_subclass(torch.Tensor) # convert to Tensor obj
+    pred["input"] = pred["input"].as_subclass(torch.Tensor)  # convert to Tensor obj
     pred = ft.move_to(pred, device="cpu")
     save(pred)
 
@@ -112,12 +110,8 @@ def get_args() -> Namespace:
         "logs/fold3/swin-factorizer/version_0/checkpoints/epoch=1999-step=99999.ckpt",
         "logs/fold4/swin-factorizer/version_0/checkpoints/epoch=1999-step=99999.ckpt",
     ]
-    parser = ArgumentParser(
-        description="""Do inference on test data.""", add_help=False
-    )
-    parser.add_argument(
-        "--checkpoints", "-c", nargs="+", default=default_checkpoints
-    )
+    parser = ArgumentParser(description="""Do inference on test data.""", add_help=False)
+    parser.add_argument("--checkpoints", "-c", nargs="+", default=default_checkpoints)
     parser.add_argument("--dwi", "-d", required=True)
     parser.add_argument("--adc", "-a", required=True)
     parser.add_argument("--flair", "-f", required=True)

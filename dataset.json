@@ -15,6 +15,7 @@
 		"1": "stroke lesion"
 	},
 	"numTraining": 250,
+	"numTest": 150,
 	"training": [
 		{
 			"id": "sub-strokecase0001",
@@ -2516,5 +2517,6 @@
 			],
 			"label": "./training/derivatives/sub-strokecase0250/ses-0001/sub-strokecase0250_ses-0001_msk.nii.gz"
 		}
-	]
+	],
+	"test": []
 }
