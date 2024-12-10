@@ -9,21 +9,19 @@ def main(args: Namespace):
         id_ = f"sub-strokecase{i:04d}"
         print(f"id: {id_} done.")
 
-        dwi_path = os.path.join(
-            root_dir, f"rawdata/{id_}/ses-0001/{id_}_ses-0001_dwi.nii.gz"
-        )
+        dwi_path = os.path.join(root_dir, f"{id_}/dwi/ses-0001/{id_}_ses-0001_DWI.nii.gz")
         fixed_image = sitk.ReadImage(dwi_path)
 
         flair_path = os.path.join(
             root_dir,
-            f"rawdata/{id_}/ses-0001/{id_}_ses-0001_flair.nii.gz",
+            f"{id_}/anat/ses-0001/{id_}_ses-0001_FLAIR.nii.gz",
         )
         moving_image = sitk.ReadImage(flair_path)
 
         registered_image = sitk.Elastix(fixed_image, moving_image)
         flair_registered_path = os.path.join(
             root_dir,
-            f"rawdata/{id_}/ses-0001/{id_}_ses-0001_flair_registered.nii.gz",
+            f"{id_}/anat/ses-0001/{id_}_ses-0001_FLAIR_registered.nii.gz",
         )
         assert fixed_image.GetSize() == registered_image.GetSize()
         sitk.WriteImage(registered_image, flair_registered_path)

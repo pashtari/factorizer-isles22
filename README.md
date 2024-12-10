@@ -21,7 +21,22 @@ pip install -r requirements.txt
 
 Before training models, we first need to prepare the dataset by taking the following steps:
 
-1. Register and download the official ISLES'22 dataset from [this link](https://isles22.grand-challenge.org/).
+1. Register and download the official ISLES'22 dataset from [this link](https://isles22.grand-challenge.org/). The dataset directory have the following structure:
+
+```bash
+ISLES22
+├── dataset_description.json
+├── LICENSE
+├── participants.tsv
+├── README
+├── derivatives
+│   ├── sub-strokecase0001
+│   ├── sub-strokecase0002
+│   └── ...
+├── sub-strokecase0001
+├── sub-strokecase0002
+└── ...
+```
 
 2. Perform FLAIR-DWI co-registration:
 
@@ -29,20 +44,24 @@ Before training models, we first need to prepare the dataset by taking the follo
 $ python flair-dwi_registration.py <dataset_dir>
 ```
 
-where `<dataset_dir>` must contain `rawdata` and `derivatives` folders. The script uses [SimpleElastix](https://simpleelastix.github.io/) to align FLAIR images to the DWI space, generating files like `{id}_ses-0001_flair_registered.nii.gz`.
+where `<dataset_dir>` is the dataset directory. The script uses [SimpleElastix](https://simpleelastix.github.io/) to align FLAIR images to the DWI space, generating files like `{id}_ses-0001_flair_registered.nii.gz`.
 
-3. Download [`dataset.json`](dataset.json) and place it in the same folder as the dataset according to the following folders structure:
+3. Download [`datalist.json`](datalist.json) and place it in the dataset folder:
 
 ```bash
-ISLES22
-├── dataset.json # data properties
-└── training # dataset_dir
-    ├── rawdata
-    │   ├── sub-strokecase0001
-    │   └── ...
-    └── derivatives
-        ├── sub-strokecase0001
-        └── ...
+<dataset_dir>
+├── datalist.json # <--
+├── dataset_description.json
+├── LICENSE
+├── participants.tsv
+├── README
+├── derivatives
+│   ├── sub-strokecase0001
+│   ├── sub-strokecase0002
+│   └── ...
+├── sub-strokecase0001
+├── sub-strokecase0002
+└── ...
 ```
 
 
@@ -65,7 +84,7 @@ $ python train.py --config configs/config_isles22_fold0_resunet.yaml
 
 ## Pre-Trained Models
 
-The Swin Factorizer and Res-U-Net models pre-trained on the ISLES22 dataset are provided in the following. The fold corresponding to each patient is provided in the [JSON file](dataset.json).
+The Swin Factorizer and Res-U-Net models pre-trained on the ISLES22 dataset are provided in the following. The fold corresponding to each patient is provided in the [JSON file](datalist.json).
 
 | Model           | #Params (M) | FLOPs (G) | Dice (%) | Fold | Config                                                          | Checkpoint                                                                                                                                      |
 |-----------------|-------------|-----------|----------|------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -107,7 +126,7 @@ factorizer-isles22
 2. To make predictions for a test case using the ensemble of all the 10 pre-trained models, run the following command:
 
 ```bash
-$ python predict.py --dwi ... --adc ... --flair ... --output ... 
+$ python predict.py --dwi path/to/dwi --adc path/to/adc --flair path/to/flair --output <output_dir> 
 ```
 
 If you want to use only some of the models rather than all of them, specify the argument `--checkpoints` with a list of paths to the model checkpoints.
