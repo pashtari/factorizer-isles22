@@ -88,21 +88,21 @@ The Swin Factorizer and Res-U-Net models pre-trained on the ISLES22 dataset are 
 
 | Model           | #Params (M) | FLOPs (G) | Dice (%) | Fold | Config                                                          | Checkpoint                                                                                                                                      |
 |-----------------|-------------|-----------|----------|------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Res-U-Net       | 28.8        | 145       | 76.6     | 0    | [link](./configs/config_isles22_fold0_resunet.yaml)         | [link](https://drive.google.com/file/d/11ta9QQgsCxFa6yhJ8P3NphWmTdOfV-Qh/view?usp=sharing) |
-| Res-U-Net       | 28.8        | 145       | 80.2     | 1    | [link](./configs/config_isles22_fold1_resunet.yaml)         | [link](https://drive.google.com/file/d/129DwLsD4ADYA0gvLJ0aAamzMcnp3ztQb/view?usp=sharing) |
-| Res-U-Net       | 28.8        | 145       | 77.4     | 2    | [link](./configs/config_isles22_fold2_resunet.yaml)         | [link](https://drive.google.com/file/d/12-bgW4W54W1-jLjUUAow9x5ZvyB5RhVj/view?usp=sharing) |
-| Res-U-Net       | 28.8        | 145       | 81.2     | 3    | [link](./configs/config_isles22_fold3_resunet.yaml)         | [link](https://drive.google.com/file/d/11zuznPQvI9rUjW7XUR7wEianqoHvlflT/view?usp=sharing) |
-| Res-U-Net       | 28.8        | 145       | 75.5     | 4    | [link](./configs/config_isles22_fold4_resunet.yaml)         | [link](https://drive.google.com/file/d/11zHYKqdzjfKcGDkkf2jqW5sr08QVQmf7/view?usp=sharing) |
-| Swin Factorizer | 7.3         | 29        | 76.2     | 0    | [link](./configs/config_isles22_fold0_swin-factorizer.yaml) | [link](https://drive.google.com/file/d/11wFyWpCV9BqiHxIySef5Y1ZZoBEhfvvl/view?usp=sharing) |
-| Swin Factorizer | 7.3         | 29        | 78.9     | 1    | [link](./configs/config_isles22_fold1_swin-factorizer.yaml) | [link](https://drive.google.com/file/d/127u43vv_-M9GJfT9Vrdas8AnNPg9MWNe/view?usp=sharing) |
-| Swin Factorizer | 7.3         | 29        | 78.5     | 2    | [link](./configs/config_isles22_fold2_swin-factorizer.yaml) | [link](https://drive.google.com/file/d/1206o6L4fo15kqSrPgDwql0pxiFg7pz7S/view?usp=sharing) |
-| Swin Factorizer | 7.3         | 29        | 80.6     | 3    | [link](./configs/config_isles22_fold3_swin-factorizer.yaml) | [link](https://drive.google.com/file/d/11zgQCa-Vgdnn5UbkCEVSKCIaWAhhxC1J/view?usp=sharing) |
-| Swin Factorizer | 7.3         | 29        | 78.6     | 4    | [link](./configs/config_isles22_fold4_swin-factorizer.yaml) | [link](https://drive.google.com/file/d/11z_XnCIIgnZZYTQAaFL_Xq53oTnpY2BI/view?usp=sharing) |
+| Res-U-Net       | 28.8        | 145       | 76.6     | 0    | [link](./configs/config_isles22_fold0_resunet.yaml)         | [link](https://www.dropbox.com/scl/fi/h9fx1dqxf6ste25bsbojl/epoch-1999-step-99999.ckpt?rlkey=kkn766oii8q6c3qi6lj55l6sb&st=2obnzmsx&dl=0) |
+| Res-U-Net       | 28.8        | 145       | 80.2     | 1    | [link](./configs/config_isles22_fold1_resunet.yaml)         |  [link](https://www.dropbox.com/scl/fi/lwdh7oucsm5k0efg974o6/epoch-1999-step-99999.ckpt?rlkey=s8dceq3p04su150vee469467b&st=zsae7105&dl=0) |
+| Res-U-Net       | 28.8        | 145       | 77.4     | 2    | [link](./configs/config_isles22_fold2_resunet.yaml)         | [link](https://www.dropbox.com/scl/fi/75lug085dw5v2qnoampul/epoch-1999-step-99999.ckpt?rlkey=dlnu62xw30nhodnstk280gojo&st=ns03wror&dl=0) |
+| Res-U-Net       | 28.8        | 145       | 81.2     | 3    | [link](./configs/config_isles22_fold3_resunet.yaml)         | [link](https://www.dropbox.com/scl/fi/fp2zzbelf3ja86d26clkv/epoch-1999-step-99999.ckpt?rlkey=qk1uziqaf4ff8zpy7idf5m8fb&st=qzgh56xw&dl=0) |
+| Res-U-Net       | 28.8        | 145       | 75.5     | 4    | [link](./configs/config_isles22_fold4_resunet.yaml)         | [link](https://www.dropbox.com/scl/fi/ciiotr1rsxnhvrfdzoj84/epoch-1999-step-99999.ckpt?rlkey=gwx89e2fpirwovvp7uv1w9ezo&st=3ruxh1u4&dl=0) |
+| Swin Factorizer | 7.3         | 29        | 76.2     | 0    | [link](./configs/config_isles22_fold0_swin-factorizer.yaml) | [link](https://www.dropbox.com/scl/fi/xpbnrgjalqpt4sr48rewz/epoch-1999-step-99999.ckpt?rlkey=rydr0vqty88noj3n04z7iz12o&st=w1h8xbrh&dl=0) |
+| Swin Factorizer | 7.3         | 29        | 78.9     | 1    | [link](./configs/config_isles22_fold1_swin-factorizer.yaml) | [link](https://www.dropbox.com/scl/fi/k55188gz3rgw474u7zga6/epoch-1999-step-99999.ckpt?rlkey=hnlhn5vedf3ppgb5vamv8hjx2&st=d9pt1azx&dl=0) |
+| Swin Factorizer | 7.3         | 29        | 78.5     | 2    | [link](./configs/config_isles22_fold2_swin-factorizer.yaml) | [link](https://www.dropbox.com/scl/fi/lltlvpfdzbyfcbirrgi41/epoch-1999-step-99999.ckpt?rlkey=zrj6hr26l9ix6289ldguoyi39&st=mqcresk7&dl=0) |
+| Swin Factorizer | 7.3         | 29        | 80.6     | 3    | [link](./configs/config_isles22_fold3_swin-factorizer.yaml) | [link](https://www.dropbox.com/scl/fi/lltlvpfdzbyfcbirrgi41/epoch-1999-step-99999.ckpt?rlkey=zrj6hr26l9ix6289ldguoyi39&st=mqcresk7&dl=0) |
+| Swin Factorizer | 7.3         | 29        | 78.6     | 4    | [link](./configs/config_isles22_fold4_swin-factorizer.yaml) | [link](https://www.dropbox.com/scl/fi/ju5kid8zaxxrteldim6fd/epoch-1999-step-99999.ckpt?rlkey=3yzpdro40hvztf7thhpqc9x7g&st=f5ycwvui&dl=0) |
 
 
 ## Inference (CPU)
 
-1. Download all the 10 pre-trained models via the [Google Drive link](https://drive.google.com/drive/folders/1onYJehT1ecVj_ABP6j1NAQr_10OGwS8r?usp=sharing) as a folder named `logs` and place it inside the home directory, that is the structure of folders will be as follows:
+1. Download all the 10 pre-trained models via the [Dropbox link](https://www.dropbox.com/scl/fo/086lt5a0diobj7y81fdfv/APp_qpKjg2EQsgLxH6Sr8qo?rlkey=8lix61hp2vu6bq2g0fq4wyft0&st=6ft8bdd2&dl=0) as a folder named `logs` and place it inside the home directory, that is the structure of folders will be as follows:
 
 ```bash
 factorizer-isles22
@@ -143,7 +143,7 @@ If you want to use only some of the models rather than all of them, specify the 
 $ git clone https://github.com/pashtari/factorizer-isles22.git
 ```
 
-2. Download all the 10 pre-trained models via the [Google Drive link](https://drive.google.com/drive/folders/1onYJehT1ecVj_ABP6j1NAQr_10OGwS8r?usp=sharing) as a folder named `logs` and place it inside the home directory, that is the structure of folders will be as follows:
+2. Download all the 10 pre-trained models via the [Dropbox link](https://www.dropbox.com/scl/fo/086lt5a0diobj7y81fdfv/APp_qpKjg2EQsgLxH6Sr8qo?rlkey=8lix61hp2vu6bq2g0fq4wyft0&st=6ft8bdd2&dl=0) as a folder named `logs` and place it inside the home directory, that is the structure of folders will be as follows:
 
 ```bash
 factorizer-isles22
